@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Auth from './Auth'
 import Menu from './Menu'
 
 const Navbar = () => {
@@ -16,14 +17,12 @@ const Navbar = () => {
                   </button>
                   <div className="collapse navbar-collapse" id="navbarNav">
                       <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-                          <Menu title="Home" active />
-                          <Menu title="Games" href='/games' />
-                          <Menu title="Rewards" />
-                          <Menu title="Discover" />
-                          <Menu title="Global Rank" />
-                          <li className="nav-item my-auto">
-                              <a className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill" href="./src/sign-in.html" role="button">Sign In</a>
-                          </li>
+                            <Menu title="Home" active />
+                            <Menu title="Games" href='/games' />
+                            <Menu title="Rewards" />
+                            <Menu title="Discover" />
+                            <Menu title="Global Rank" />
+                            <Auth isLogin />
                       </ul>
                   </div>
               </div>
