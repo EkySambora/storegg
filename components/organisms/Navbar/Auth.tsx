@@ -28,12 +28,12 @@ const Auth = (props: AuthProps) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/member/edit-profile">
                                 <a className="dropdown-item text-lg color-palette-2" href="#">Account Setting</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/signin">
                                 <a className="dropdown-item text-lg color-palette-2" href="#">Log Out</a>
                             </Link>
                         </li>

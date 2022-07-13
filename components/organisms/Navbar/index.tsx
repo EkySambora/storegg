@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Auth from './Auth'
 import Menu from './Menu'
+import ToggleMenu from './ToggleMenu'
 
 const Navbar = () => {
     return (
@@ -11,10 +12,7 @@ const Navbar = () => {
                   <a className="navbar-brand" href="#">
                       <Image src="/icon/logo.svg" width={60} height={60} />
                   </a>
-                  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span className="navbar-toggler-icon"></span>
-                  </button>
+                  <ToggleMenu />
                   <div className="collapse navbar-collapse" id="navbarNav">
                       <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
                             <Menu title="Home" active />
