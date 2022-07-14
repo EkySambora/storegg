@@ -45,7 +45,9 @@ const Auth = (props: AuthProps) => {
     return (
         <>
             <li className="nav-item my-auto">
-                <a className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill" href="./src/sign-in.html" role="button">Sign In</a>
+                <Link href="signin">
+                    <a className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill" role="button">Sign In</a>
+                </Link>
             </li>
             
         </>
