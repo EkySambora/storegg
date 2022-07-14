@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const TopUpForm = () => {
@@ -163,10 +164,12 @@ const TopUpForm = () => {
                     placeholder="Enter your Bank Account Name"/>
             </div>
             <div className="d-sm-block d-flex flex-column w-100">
-                <a href="./checkout.html" type="submit"
-                    className="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg">Continue</a>
-                {/* <button type="submit"
-                    className="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg">Continue</button> */}
+                <Link href="/checkout">
+                    <a type="submit"
+                        className="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg">Continue</a>
+                    {/* <button type="submit"
+                        className="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg">Continue</button> */}
+                </Link>
             </div>
         </form>
   )
